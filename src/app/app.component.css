@@ -1,0 +1,103 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }
+
+  .style{
+    color: rgb(5, 117, 182);
+    size: 60px;
+    text-align:center;
+  }
+
+  .align{
+    vertical-align: middle;
+  }
+
+  .body{
+    background-color: rgb(26, 180, 194)
+  }
+
+  .aligned-with-icon{
+    position: absolute;
+    margin-top: 5px;
+    margin-left: 5px; /* optional */
+}
+
+  .icon{
+  float:right;
+}
+
+  .box {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  box-sizing: border-box;
+}
+
+.button-box{
+
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+/* Column container */
+.row {  
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+  background: #fa6e44;
+  border-radius: 6px;
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #1abc9c;
+  border-radius: 6px;
+}
+
+.main {
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.example-container {
+  width: 500px;
+  height: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+}
+
+.example-sidenav-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.example-sidenav {
+  padding: 20px;
+}

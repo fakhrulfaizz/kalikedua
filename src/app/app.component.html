@@ -1,0 +1,205 @@
+
+
+  <div>
+  <h1 class = "style">
+    Welcome to {{ title }}!
+  </h1>
+  </div>
+  
+  <div>
+    <span>
+  <button mat-button [matMenuTriggerFor]="menu1" >Bitcoin</button>
+<mat-menu #menu1="matMenu">
+  <button mat-menu-item>Current</button>
+  <button mat-menu-item>Actual</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="menu2">Bitcoin</button>
+<mat-menu #menu2="matMenu">
+  <button mat-menu-item>Current</button>
+  <button mat-menu-item>Actual</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="menu3">Bitcoin</button>
+<mat-menu #menu3="matMenu">
+  <button mat-menu-item>Current</button>
+  <button mat-menu-item>Actual</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="menu4" >Bitcoin</button>
+<mat-menu #menu4="matMenu">
+  <button mat-menu-item>Current</button>
+  <button mat-menu-item>Actual</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="menu5" >Etherium</button>
+<mat-menu #menu5="matMenu">
+  <button mat-menu-item>Current</button>
+  <button mat-menu-item>Actual</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="menu6">Etherium</button>
+<mat-menu #menu6="matMenu">
+  <button mat-menu-item>Current</button>
+  <button mat-menu-item>Actual</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="menu7">Etherium</button>
+<mat-menu #menu7="matMenu">
+  <button mat-menu-item>Current</button>
+  <button mat-menu-item>Actual</button>
+</mat-menu>
+<button mat-button [matMenuTriggerFor]="menu8" >Etherium</button>
+<mat-menu #menu8="matMenu">
+  <button mat-menu-item>Current</button>
+  <button mat-menu-item>Actual</button>
+</mat-menu>
+</span>
+
+<mat-icon class="icon">home</mat-icon>
+<mat-icon class="icon">phone</mat-icon>
+<mat-icon class="icon">face</mat-icon>
+</div>
+  <div class="navbar-brand">
+      <a class="navbar-item">
+        <img src="assets/img/Pic.jpg" width="1240" height="300">
+      </a>
+    </div>
+<mat-tab-group mat-stretch-tabs >
+    <mat-tab label="First" > 
+      <p>
+          FedEx has joined forces with competitors, UPS and DHL Express (all members of the 
+          Blockchain in Transport Alliance), to hammer out standards for such a system. 
+          Currently, though a company like UPS can manage single supply chain transactions, 
+          these break down when dealing with real-world scenarios with multiple shippers.
+          A company may use DHL to ship components to Germany. 
+          The assembled part may then ship to Latin America via UPS before the fitted part 
+          travels to Japan via FedEx. A standardized blockchain would enable all of the relevant 
+          information to be shared between all parties and different national authorities.</p>
+        
+    </mat-tab>
+
+    <mat-tab label="Second"> 
+    <p>
+        FedEx believes that this is the quickest way to modernize and streamline the industry, 
+        meeting customers’ increasingly complex cross-border shipping, transportation, and 
+        brokerage needs. Additionally, it would provide a way to help customs and border agents 
+        to achieve their goals, regarding illicit goods flow.
+
+        Shipping has long been one of the industries with high hopes for the introduction of
+        blockchain based solutions. A standardized and mandated system could see one of the 
+        first cases of mainstream adoption.
+
+    </p>  
+    </mat-tab>
+    <mat-tab label="Third"> 
+
+      <p>
+          FedEx believes that this is the quickest way to modernize and streamline the industry,
+           meeting customers’ increasingly complex cross-border shipping, transportation, and 
+           brokerage needs. Additionally, it would provide a way to help customs and border 
+           agents to achieve their goals, regarding illicit goods flow.
+
+          Shipping has long been one of the industries with high hopes for the introduction 
+          of blockchain based solutions. A standardized and mandated system could see one of 
+          the first cases of mainstream adoption.
+
+      </p>
+    </mat-tab>
+    <mat-tab label="Forth"> 
+      <p>
+          A similarly energetic figure, Yang has already released a dedicated 
+          policy statement on cryptocurrency, promising to overhaul the US’ “patchwork” 
+          regulatory landscape and making ownership and use less burdensome on individuals 
+          and businesses.
+
+          An open policy on the technology would hold clear benefits in Ukraine. 
+          As the semi-frozen conflict with Russia rumbles on, Bitcoin has become a 
+          symbol of resistance across the border, compounded by a lack of ability by 
+          the Kremlin to install suitable regulation.
+      </p> </mat-tab>
+    <mat-tab label="Fifth"> 
+      <p>
+          For example, his scheme to let citizens open and close businesses “in two clicks” as 
+          part of the digital state, begun as a private project, stands in direct opposition 
+          to scandals such as last week’s state-sponsored $1 million Bitcoin bribe.
+
+          “…People who work in business witnessed the changes and believed in them,” he said.
+          
+          Ukraine is already home to various crypto industry adoption pushes, including from 
+          the previous government administration, which in October pledged to develop full 
+          legalization frameworks for cryptocurrency by 2021.
+      </p>  </mat-tab>
+  </mat-tab-group>
+<div class="row">
+  <div class="side">
+
+    <h1 color = "white">About Us</h1>
+  </div>
+<div class="main">
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+          <mat-panel-title>
+            Auto Complete
+          </mat-panel-title>
+      </mat-expansion-panel-header>
+            Simple Auto Complete Works!
+            <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input type="text" placeholder="Pick one" aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let option of options" [value]="option">
+                {{option}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+          </form>
+      
+            <app-formcontrol></app-formcontrol>
+       
+      <app-autocompletetoggle></app-autocompletetoggle>
+      <app-groupautocomplete></app-groupautocomplete>
+    </mat-expansion-panel>
+    <mat-expansion-panel  >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Check Box
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <app-checkbox></app-checkbox>
+    </mat-expansion-panel>
+  </mat-accordion>
+    
+  <br/>
+
+  <button mat-button class="button-box">
+  <div class="box">
+    <h1>My Website</h1>
+    <p>With a <b>flexible</b> layout.</p>
+  </div>
+</button>
+
+<br/>
+  <mat-grid-list cols="2" rowHeight="2:1">
+    <mat-grid-tile>1</mat-grid-tile>
+    <mat-grid-tile>2</mat-grid-tile>
+    <mat-grid-tile>3</mat-grid-tile>
+    <mat-grid-tile>4</mat-grid-tile>
+  </mat-grid-list>
+</div>
+
+<app-value></app-value>
+<router-outlet></router-outlet>
+</div>
+
+<!--
+<div>
+  <div>  
+  <br/><app-formcontrol></app-formcontrol>
+</div>
+</div>
+
+<br/><app-autocompletetoggle></app-autocompletetoggle>
+<br/><app-groupautocomplete></app-groupautocomplete>
+</div>
+-->
+<!-- Footer -->
+<br/>
+<div class="footer">
+  <h2>Footer</h2>
+</div>
